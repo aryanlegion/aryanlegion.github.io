@@ -3,24 +3,58 @@
 	<head>
 		<title>Aryan Legion</title>
 		<style>
-		body {
-			background-color: #000;
-		}
-		@font-face {
-			font-family: Potsdam;
-			src: url(/Potsdam.ttf);
-		}
-			#join {
-					font-family: 'Potsdam', sans-serif;
-					margin-top: 5%;
-					font-size: 50pt;
-					padding: 100px 100px 100px 100px;
-			}
+			  @import url('https://fonts.googleapis.com/css?family=Fira+Sans');
+			  @import url('./Potsdam.ttf');
+			  body {
+			    background-color: A8122B;
+			  }
+			  #trident {
+			    width: 250px;
+			    height: 250px;
+			    position: absolute;
+			    left: 50%;
+			    margin-left: -125px;
+			    top: 30%;
+			    margin-top: -125px;
+			    transition: all 2s;
+			  }
+
+			  #trident:hover {
+			    transform: rotateY(180deg);
+			  }
+
+			  #statement {
+			    position: absolute;
+			    width: 50%;
+			    color: white;
+			    font-family: 'Fira Sans', sans-serif;
+			    top: 50%;
+			    left: 50%;
+			    margin-left: -25%;
+			    text-align: center;
+			    font-size: 15pt;
+			  }
+
+			  #join {
+			    color: white;
+			    font-family: 'Potsdam';
+			    font-size: 18pt;
+			    text-decoration: none;
+			    padding: 15px 30px 15px 30px;
+			    background-color: #FF1C41;
+			    box-shadow: 2px 2px 2px #7C0D20;
+			  }
+
+			  #join:active {
+			    box-shadow: none;
+			  }
 		</style>
 	</head>
-	<body>
-		<center>
-			<span id="join"><a style="text-decoration: none; color: white;" href="https://discord.gg/hCjSZb7"><h1 id="join">Join Discord</h1></a></span>
-		</center>
+<body>
+<img id="trident" src="https://aryanlegion.github.io/variant.png">
+<p id="statement">
+  We believe that threats must be dealt with directly, and neutralized wholly. The time for talk has passed, now begins the most crucial stage: that of action.  The paranoia instilled in us about who we can trust and who we cannot must be cleansed.  The movement must be birthed anew in a manger of swaddling cloth. Our aggressors must be removed from the picture entirely and our cause must advance forward. Our race has for too long conceded, now we must rise above the instilled existence they have forced upon us and see that our only course is insurrection not against the state, but against the syndicate.
+
+  <br><br><a id="join" href="https://discord.gg/hCjSZb7">Join Us</a>  
+</p>
 	</body>
-</html>
